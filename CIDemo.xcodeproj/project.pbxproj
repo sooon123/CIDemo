@@ -40,11 +40,16 @@
 
 /* Begin PBXFileReference section */
 		134B39AC2B0D516271179FBC /* Pods-CIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CIDemo/Pods-CIDemo.release.xcconfig"; sourceTree = "<group>"; };
+		17E852B051E0121EAABB434F /* Pods-CIDemoUITests.pre.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIDemoUITests.pre.xcconfig"; path = "Pods/Target Support Files/Pods-CIDemoUITests/Pods-CIDemoUITests.pre.xcconfig"; sourceTree = "<group>"; };
+		41EFC00E9EDCFA56165A5273 /* Pods-CIDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CIDemoTests/Pods-CIDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		51D887065CED216EA252CBE7 /* Pods-CIDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CIDemoTests/Pods-CIDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BE42BC5BE8CBD07C3573F02 /* Pods-CIDemoTests.pre.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIDemoTests.pre.xcconfig"; path = "Pods/Target Support Files/Pods-CIDemoTests/Pods-CIDemoTests.pre.xcconfig"; sourceTree = "<group>"; };
 		69A6249C869ACD2DF8BB26DE /* libPods-CIDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CIDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6F3C91CA3C11FBFC118DB9 /* libPods-CIDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CIDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EE5FEDD5BF2B6698EEFE89 /* Pods-CIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CIDemo/Pods-CIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		990D5138B49D2D4772F58BBB /* libPods-CIDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CIDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6525273A2C612AF6DE83468 /* Pods-CIDemo.pre.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIDemo.pre.xcconfig"; path = "Pods/Target Support Files/Pods-CIDemo/Pods-CIDemo.pre.xcconfig"; sourceTree = "<group>"; };
+		CD0AD28ADE53597455AC0D3A /* Pods-CIDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CIDemoUITests/Pods-CIDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F21B0E5721B13596009E6EF8 /* CIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21B0E5A21B13596009E6EF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F21B0E5B21B13596009E6EF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -183,6 +188,11 @@
 				96EE5FEDD5BF2B6698EEFE89 /* Pods-CIDemo.debug.xcconfig */,
 				134B39AC2B0D516271179FBC /* Pods-CIDemo.release.xcconfig */,
 				A6525273A2C612AF6DE83468 /* Pods-CIDemo.pre.xcconfig */,
+				51D887065CED216EA252CBE7 /* Pods-CIDemoTests.debug.xcconfig */,
+				5BE42BC5BE8CBD07C3573F02 /* Pods-CIDemoTests.pre.xcconfig */,
+				41EFC00E9EDCFA56165A5273 /* Pods-CIDemoTests.release.xcconfig */,
+				17E852B051E0121EAABB434F /* Pods-CIDemoUITests.pre.xcconfig */,
+				CD0AD28ADE53597455AC0D3A /* Pods-CIDemoUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -561,6 +571,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HNVCTBR54T;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = CIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -581,6 +592,7 @@
 				CODE_SIGN_ENTITLEMENTS = CIDemo/CIDemo.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = CIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,6 +607,7 @@
 		};
 		F21B0E8A21B13597009E6EF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51D887065CED216EA252CBE7 /* Pods-CIDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -614,6 +627,7 @@
 		};
 		F21B0E8B21B13597009E6EF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EFC00E9EDCFA56165A5273 /* Pods-CIDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -652,6 +666,7 @@
 		};
 		F21B0E8E21B13597009E6EF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0AD28ADE53597455AC0D3A /* Pods-CIDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HNVCTBR54T;
@@ -738,10 +753,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = HNVCTBR54T;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"PRE=1",
-					"COCOAPODS=1",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = CIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -756,6 +768,7 @@
 		};
 		F21B0E9421B13D12009E6EF8 /* Pre */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE42BC5BE8CBD07C3573F02 /* Pods-CIDemoTests.pre.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -775,6 +788,7 @@
 		};
 		F21B0E9521B13D12009E6EF8 /* Pre */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E852B051E0121EAABB434F /* Pods-CIDemoUITests.pre.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HNVCTBR54T;
