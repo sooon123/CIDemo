@@ -1,4 +1,5 @@
 #!/bin/bash
+#!/bin/bash -il
 
 CONFIGURATION=$1
 
