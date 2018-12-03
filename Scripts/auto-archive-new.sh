@@ -1,7 +1,5 @@
 #!/bin/bash -il
 
-pod install
-
 CONFIGURATION=$1
 
 if [ -z "${CONFIGURATION}" ]; then
