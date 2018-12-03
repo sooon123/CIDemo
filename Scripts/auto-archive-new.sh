@@ -9,10 +9,11 @@ fi
 
 EXPORT_PATH="./build/${CONFIGURATION}-build"
 
-echo -e "path ==== ${EXPORT_PATH}"
+#echo -e "path ==== ${EXPORT_PATH}"
 
 rm -rf "${EXPORT_PATH}"
-mkdir -p "build/${CONFIGURATION}-build"
+#mkdir -p "build/${CONFIGURATION}-build"
+security unlock-keychain login.keychain
 
 
 buildNumber=`date +"%Y%m%d%H%M"`
