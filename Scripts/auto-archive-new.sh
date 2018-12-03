@@ -1,5 +1,6 @@
 #!/bin/bash -il
 
+pod install
 
 CONFIGURATION=$1
 
