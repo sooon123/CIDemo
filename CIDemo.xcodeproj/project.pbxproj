@@ -19,6 +19,7 @@
 		F21B0E6D21B13597009E6EF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F21B0E6C21B13597009E6EF8 /* main.m */; };
 		F21B0E7721B13597009E6EF8 /* CIDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F21B0E7621B13597009E6EF8 /* CIDemoTests.m */; };
 		F21B0E8221B13597009E6EF8 /* CIDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F21B0E8121B13597009E6EF8 /* CIDemoUITests.m */; };
+		F24470F421B4F655000988E3 /* eee.m in Sources */ = {isa = PBXBuildFile; fileRef = F24470F321B4F655000988E3 /* eee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		F21B0E9121B13C6A009E6EF8 /* Pre.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Pre.xcconfig; sourceTree = "<group>"; };
 		F21B0E9621B13F41009E6EF8 /* common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = common.xcconfig; sourceTree = "<group>"; };
 		F21B0E9721B14B80009E6EF8 /* CIDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CIDemo.entitlements; sourceTree = "<group>"; };
+		F24470F321B4F655000988E3 /* eee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				F21B0E9721B14B80009E6EF8 /* CIDemo.entitlements */,
 				F21B0E5A21B13596009E6EF8 /* AppDelegate.h */,
 				F21B0E5B21B13596009E6EF8 /* AppDelegate.m */,
+				F24470F321B4F655000988E3 /* eee.m */,
 				F21B0E5D21B13596009E6EF8 /* FirstViewController.h */,
 				F21B0E5E21B13596009E6EF8 /* FirstViewController.m */,
 				F21B0E6021B13596009E6EF8 /* SecondViewController.h */,
@@ -394,6 +397,7 @@
 			files = (
 				F21B0E6221B13596009E6EF8 /* SecondViewController.m in Sources */,
 				F21B0E5C21B13596009E6EF8 /* AppDelegate.m in Sources */,
+				F24470F421B4F655000988E3 /* eee.m in Sources */,
 				F21B0E6D21B13597009E6EF8 /* main.m in Sources */,
 				F21B0E5F21B13596009E6EF8 /* FirstViewController.m in Sources */,
 			);
@@ -568,18 +572,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CIDemo/CIDemo.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = HNVCTBR54T;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = CIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.cidemo.pre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "InHouse - CIDemo";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -590,10 +595,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CIDemo/CIDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = CIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -755,13 +762,14 @@
 				DEVELOPMENT_TEAM = HNVCTBR54T;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = CIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.cidemo.pre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "InHouse - CIDemo";
+				PROVISIONING_PROFILE_SPECIFIER = $APP_PROFILE;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Pre;
