@@ -16,4 +16,4 @@ buildNumber=`date +"%Y%m%d%H%M"`
 
 xcrun xcodebuild -workspace ../CIDemo.xcworkspace/ -configuration "${CONFIGURATION}" -scheme "CIDemo${CONFIGURATION}" clean archive -archivePath "${EXPORT_PATH}/ipa" -verbose CODE_SIGN_IDENTITY="iPhone Distribution: Beijing Zhongguancun Ronghui Financial Information Service Co., Ltd" APP_PROFILE="InHouse - CIDemo"
 
-xcrun xcodebuild -exportArchive -exportOptionsPlist InHouse-QA.plist -archivePath "${EXPORT_PATH}/ipa.xcarchive" -exportPath "${EXPORT_PATH}"
+# xcrun xcodebuild -exportArchive -exportOptionsPlist InHouse-QA.plist -archivePath "${EXPORT_PATH}/ipa.xcarchive" -exportPath "${EXPORT_PATH}"
