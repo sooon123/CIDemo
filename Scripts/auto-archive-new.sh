@@ -14,7 +14,7 @@ EXPORT_PATH="./build/${CONFIGURATION}-build"
 rm -rf "${EXPORT_PATH}"
 #mkdir -p "build/${CONFIGURATION}-build"
 security unlock-keychain login.keychain
- security unlock-keychain -p " " "/Users/sh/Library/Keychains/login.keychain"
+ security unlock-keychain -p " " "/Users/sh/Library/Keychains/login.keychain-db"
 
 buildNumber=`date +"%Y%m%d%H%M"`
 /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildNumber" "../CIDemo/Info.plist"
